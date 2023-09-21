@@ -3,21 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Especie Humana - Un Viaje de Descubrimiento</title>
-    <meta name="description" content="Explora la maravillosa complejidad de la especie humana, desde nuestra historia hasta nuestros logros más grandes.">
-    <meta name="keywords" content="Especie Humana, Historia Humana, Cultura, Ciencia, Tecnología">
-    <link rel="stylesheet" href="styles.css">
+    <title>La especie humana</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav a:hover {
+            color: #999;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .main .sidebar {
+            width: 25%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .main .content {
+            width: 75%;
+            padding: 20px;
+        }
+
+        .main .content h2 {
+            color: #333;
+        }
+
+        .main .content p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .main .content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .main .sidebar {
+                width: 100%;
+                order: 2;
+            }
+
+            .main .content {
+                width: 100%;
+                order: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>La Especie Humana: Un Viaje de Descubrimiento</h1>
-        <p>Únete a nosotros en un viaje de descubrimiento a través de la historia y los logros de la especie humana.</p>
-    </header>
-    <section>
-        <h2>"Conexiones y Relaciones Humanas: El Tejido Invisible de Nuestra Sociedad"</h2>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HNEtd6nt6mY" title="CONEXIONES HUMANAS EL PODER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container">
+        <div class="header">
+            <h1>La especie humana</h1>
+            <p>Un sitio web para aprender sobre los orígenes, la diversidad y el futuro de los humanos.</p>
         </div>
-    <section>
+        <div class="nav">
+            <a href="#">Inicio</a>
+            <a href="#">Historia</a>
+            <a href="#">Evolución</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <h3>Recursos recomendados</h3>
+                <ul>
+                    <li><a href="#">El origen de las especies - Charles Darwin</a></li>
+                    <li><a href="#">Sapiens - Yuval Noah Harari</a></li>
+                    <li><a href="#">El gen egoísta - Richard Dawkins</a></li>
+                    <li><a href="#">El tercer chimpancé - Jared Diamond</a></li>
+                    <li><a href="#">El viaje de la humanidad - Alice Roberts</a></li>
+                </ul>
+                <h3>Enlaces de interés</h3>
+                <ul>
+                    <li><a href="#">Museo Nacional de Antropología</a></li>
+                    <li><a href="#">Instituto Max Planck de Antropología Evolutiva</a></li>
+                    <li><a href="#">Proyecto Genoma Humano</a></li>
+                    <li><a href="#">National Geographic - Genographic Project</a></li>
+                    <li><a href="#">TED - Ideas sobre la humanidad</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>¿Qué es la especie humana?</h2>
+                <p>La especie humana, científicamente llamada Homo sapiens, es la única especie viva del género Homo, que pertenece a la familia de los homínidos, dentro del orden de los primates. Los humanos se caracterizan por tener un cerebro grande y complejo, un lenguaje articulado, una capacidad de razonamiento abstracto, una cultura diversa y una habilidad para modificar el medio ambiente a su favor.</p>
+                <img src="humanos.jpg" alt="Imagen de un grupo de humanos de diferentes razas y edades">
+                <p>Los humanos se originaron en África hace unos 300.000 años, a partir de una población ancestral común con los neandertales y los denisovanos, otras dos especies extintas del género Homo. Los humanos modernos se expandieron por el resto del mundo hace unos 60.000 años, reemplazando o mezclándose con las poblaciones locales de otros homínidos. Hoy en día, los humanos habitan todos los continentes y regiones del planeta, y se estima que hay unos 7.900 millones de individuos.</p>
+                <p>Los humanos son una especie muy diversa, tanto genética como culturalmente. Existen diferentes grupos étnicos, razas, lenguas, religiones, costumbres, valores y formas de organización social entre los humanos. Sin embargo, todos los humanos comparten un origen común y una naturaleza biológica similar, y tienen más cosas en común que diferencias. Los humanos también son capaces de cooperar, comunicarse y crear vínculos afectivos entre ellos.</p>
+                <p>Los humanos son una especie en constante evolución, adaptación e innovación. Los avances científicos, tecnológicos, artísticos y culturales de los humanos han transformado el mundo y han generado nuevos desafíos y oportunidades. Los humanos tienen la responsabilidad de cuidar el planeta y a las demás especies que lo habitan, así como de buscar el bienestar y el desarrollo de toda la humanidad.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2023 La especie humana. Todos los derechos reservados.</p>
+        </div>
+    </div>
 </body>
 </html>
