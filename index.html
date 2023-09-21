@@ -32,10 +32,10 @@
             <p>Un sitio web para aprender sobre los orígenes, la diversidad y el futuro de los humanos.</p>
         </div>
         <div class="nav" class="menu">
-          <div class="menu-item" onclick="showContent('home')">VIAJERO HUMANO</div>
-          <div class="menu-item" onclick="showContent('about')">CUERPO HUMANO</div>
-          <div class="menu-item" onclick="showContent('contact')">MENTE HUMANA</div>
-          <div class="menu-item" onclick="showContent('contact')">ESPIRITUALIDAD</div>
+          <div class="menu-item" onclick="showContent('inicio')">VIAJERO HUMANO</div>
+          <div class="menu-item" onclick="showContent('cuerpo')">CUERPO HUMANO</div>
+          <div class="menu-item" onclick="showContent('mente')">MENTE HUMANA</div>
+          <div class="menu-item" onclick="showContent('alma')">ESPIRITUALIDAD</div>
         </div>
         <div class="main">
             <div class="sidebar">
@@ -65,7 +65,7 @@
     function showContent(menu) {
       var content = document.getElementById("content");
       // Puedes cambiar el contenido según el menú que quieras mostrar
-      if (menu == "VIAJERO HUMANO") {
+      if (menu == "inicio") {
         content.innerHTML = "<h2>¿Qué es la especie humana?</h2>
             <div> 
                 <p>La especie humana es una de las muchas ramas evolutivas que se han originado a partir de un ancestro común con los chimpancés y los bonobos hace unos 6 millones de años.</p>
@@ -80,10 +80,10 @@
                 <p>Los humanos son una especie muy diversa, tanto genética como culturalmente. Existen diferentes grupos étnicos, razas, lenguas, religiones, costumbres, valores y formas de organización social entre los humanos. Sin embargo, todos los humanos comparten un origen común y una naturaleza biológica similar, y tienen más cosas en común que diferencias. Los humanos también son capaces de cooperar, comunicarse y crear vínculos afectivos entre ellos.</p>
                 <p>Los humanos son una especie en constante evolución, adaptación e innovación. Los avances científicos, tecnológicos, artísticos y culturales de los humanos han transformado el mundo y han generado nuevos desafíos y oportunidades. Los humanos tienen la responsabilidad de cuidar el planeta y a las demás especies que lo habitan, así como de buscar el bienestar y el desarrollo de toda la humanidad.</p>";
           <div>
-      } else if (menu == "MENTE HUMANA") {
+      } else if (menu == "mente") {
         content.innerHTML = "";
           
-      } else if (menu == "CUERPO HUMANO") {
+      } else if (menu == "cuerpo") {
         content.innerHTML = "<h1>El cuerpo humano: una maravilla de la naturaleza</h1>
               <div> 
                   <p>El cuerpo humano es la estructura física y material del ser humano. Está formado por gran cantidad de células que trabajan juntas para realizar diferentes funciones necesarias para mantener la vida. Las células se agrupan para formar tejidos y órganos. Un conjunto de órganos agrupados que contribuyen a la misma función forman los aparatos y sistemas como el aparato digestivo y el sistema nervioso. Diferentes ciencias estudian el cuerpo humano, entre ellas la anatomía que describe la forma de las diferentes estructuras y la fisiología que estudia la función y los mecanismos que la hacen posible.[^1^][1]</p>
