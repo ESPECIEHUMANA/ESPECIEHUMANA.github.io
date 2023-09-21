@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-     <style>
+      <style>
+    /* Estilos para el menú */
     .menu {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
       align-items: center;
-      background-color: lightblue;
+      margin: 20px;
     }
 
     .menu-item {
+      width: 200px;
+      height: 50px;
+      border: 1px solid black;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 50px;
       cursor: pointer;
-      padding: 10px;
     }
 
+    .menu-item:hover {
+      background-color: blue;
+      color: white;
+    }
+
+    /* Estilos para el contenido */
     .content {
+      display: flex;
+      justify-content: center;
       margin: 20px;
+    }
+
+    .content-item {
+      width: 300px;
+      height: 200px;
       border: 1px solid black;
-      min-height: 200px;
+      padding: 10px;
     }
   </style>
     <meta charset="UTF-8">
@@ -26,47 +45,27 @@
     <title>La especie humana</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>La especie humana</h1>
-            <p>Un sitio web para aprender sobre los orígenes, la diversidad y el futuro de los humanos.</p>
-        </div>
-        <div class="nav" class="menu">
-          <div class="menu-item" onclick="showContent('inicio')">VIAJERO HUMANO</div>
-          <div class="menu-item" onclick="showContent('cuerpo')">CUERPO HUMANO</div>
-          <div class="menu-item" onclick="showContent('mente')">MENTE HUMANA</div>
-          <div class="menu-item" onclick="showContent('alma')">ESPIRITUALIDAD</div>
-        </div>
-        <div class="main">
-            <div class="sidebar">
-                <h3>Recursos recomendados</h3>
-                <ul>
-                    <li><a href="#">El origen de las especies - Charles Darwin</a></li>
-                    <li><a href="#">Sapiens - Yuval Noah Harari</a></li>
-                    <li><a href="#">El gen egoísta - Richard Dawkins</a></li>
-                    <li><a href="#">El tercer chimpancé - Jared Diamond</a></li>
-                    <li><a href="#">El viaje de la humanidad - Alice Roberts</a></li>
-                </ul>
-                <h3>Enlaces de interés</h3>
-                <ul>
-                    <li><a href="#">Museo Nacional de Antropología</a></li>
-                    <li><a href="#">Instituto Max Planck de Antropología Evolutiva</a></li>
-                    <li><a href="#">Proyecto Genoma Humano</a></li>
-                    <li><a href="#">National Geographic - Genographic Project</a></li>
-                    <li><a href="#">TED - Ideas sobre la humanidad</a></li>
-                </ul>
-            </div>
-            <div class="content" id="content">
-    <!-- Aquí se mostrará el contenido según el menú seleccionado -->
-            </div>
+     <div class="menu">
+         <!-- Elementos del menú -->
+         <div class="menu-item" id="item1">VIAJERO HUMANO</div>
+         <div class="menu-item" id="item2">CUERPO HUMANO</div>
+         <div class="menu-item" id="item3">MENTE HUMANA</div>
+       </div>
 
-            <script>
-    // Esta función recibe el nombre del menú y cambia el contenido del div con id "content"
-    function showContent(menu) {
+  <div class="content">
+         <!-- Elemento del contenido -->
+         <div class="content-item" id="content"></div>
+  </div>
+
+  <script>
+    // Función para cambiar el contenido según el elemento del menú pulsado
+    function changeContent(item) {
+      // Obtener el elemento del contenido
       var content = document.getElementById("content");
-      // Puedes cambiar el contenido según el menú que quieras mostrar
-      if (menu == "inicio") {
-        content.innerHTML = "<h2>¿Qué es la especie humana?</h2>
+      // Cambiar el contenido según el item
+      switch (item) {
+        case "item1":
+          content.innerHTML = "<h2>¿Qué es la especie humana?</h2>
             <div> 
                 <p>La especie humana es una de las muchas ramas evolutivas que se han originado a partir de un ancestro común con los chimpancés y los bonobos hace unos 6 millones de años.</p>
                 <p>Los humanos pertenecen al género Homo, que se caracteriza por tener un cerebro más grande y complejo, una postura bípeda y una capacidad para fabricar herramientas y comunicarse mediante el lenguaje.</p> 
@@ -78,13 +77,10 @@
                 <a href='https://postimg.cc/0K8Brzfz' target='_blank'><img src='https://i.postimg.cc/0K8Brzfz/0dcbb81c-fa15-4b49-9ac2-1af536f9c67d.jpg' alt="Imagen de un grupo de humanos de diferentes razas y edades" border='0' alt='0dcbb81c-fa15-4b49-9ac2-1af536f9c67d'/></a>
                 <p>Los humanos se originaron en África hace unos 300.000 años, a partir de una población ancestral común con los neandertales y los denisovanos, otras dos especies extintas del género Homo. Los humanos modernos se expandieron por el resto del mundo hace unos 60.000 años, reemplazando o mezclándose con las poblaciones locales de otros homínidos. Hoy en día, los humanos habitan todos los continentes y regiones del planeta, y se estima que hay unos 7.900 millones de individuos.</p>
                 <p>Los humanos son una especie muy diversa, tanto genética como culturalmente. Existen diferentes grupos étnicos, razas, lenguas, religiones, costumbres, valores y formas de organización social entre los humanos. Sin embargo, todos los humanos comparten un origen común y una naturaleza biológica similar, y tienen más cosas en común que diferencias. Los humanos también son capaces de cooperar, comunicarse y crear vínculos afectivos entre ellos.</p>
-                <p>Los humanos son una especie en constante evolución, adaptación e innovación. Los avances científicos, tecnológicos, artísticos y culturales de los humanos han transformado el mundo y han generado nuevos desafíos y oportunidades. Los humanos tienen la responsabilidad de cuidar el planeta y a las demás especies que lo habitan, así como de buscar el bienestar y el desarrollo de toda la humanidad.</p>";
-          <div>
-      } else if (menu == "mente") {
-        content.innerHTML = "";
-          
-      } else if (menu == "cuerpo") {
-        content.innerHTML = "<h1>El cuerpo humano: una maravilla de la naturaleza</h1>
+                <p>Los humanos son una especie en constante evolución, adaptación e innovación. Los avances científicos, tecnológicos, artísticos y culturales de los humanos han transformado el mundo y han generado nuevos desafíos y oportunidades. Los humanos tienen la responsabilidad de cuidar el planeta y a las demás especies que lo habitan, así como de buscar el bienestar y el desarrollo de toda la humanidad.</p";
+          break;
+        case "item2":
+          content.innerHTML = "<h1>El cuerpo humano: una maravilla de la naturaleza</h1>
               <div> 
                   <p>El cuerpo humano es la estructura física y material del ser humano. Está formado por gran cantidad de células que trabajan juntas para realizar diferentes funciones necesarias para mantener la vida. Las células se agrupan para formar tejidos y órganos. Un conjunto de órganos agrupados que contribuyen a la misma función forman los aparatos y sistemas como el aparato digestivo y el sistema nervioso. Diferentes ciencias estudian el cuerpo humano, entre ellas la anatomía que describe la forma de las diferentes estructuras y la fisiología que estudia la función y los mecanismos que la hacen posible.[^1^][1]</p>
                   <p>En este artículo vamos a ver las principales partes del cuerpo humano, tanto en su aspecto exterior como interno, y los sistemas que lo componen y permiten su funcionamiento.</p>
@@ -120,14 +116,36 @@
                     <li>Sistema reproductor: formado por los órganos sexuales (testículos y pene en el hombre; ovarios, trompas de Falopio, útero y vagina en la mujer) y las glándulas anexas (próstata, vesículas seminales y glándulas de Cowper en el hombre; glándulas de Bartholin en la mujer). Su función es producir gametos (espermatozoides y óvulos), hormonas sexuales y permitir la fecundación y el desarrollo del embrión.</li>
                     <li>Sistema tegumentario: formado por la piel y sus anexos (pelo, uñas y glándulas sudoríparas y sebáceas). Su función es proteger al cuerpo de agentes externos, regular la temperatura corporal y percibir estímulos táctiles, térmicos o dolorosos.</li>
                   </ul>
-                  <p>Como puedes ver, el cuerpo humano es una maravilla de la naturaleza que merece ser conocida y cuidada. Esperamos que este artículo te haya ayudado a entender mejor cómo somos por dentro y cómo funcionamos. Si quieres saber más sobre el cuerpo humano o cualquier otro tema relacionado con la ciencia o la naturaleza, no te pierdas nuestro canal de YouTube";
-            </div>
+                  <p>Como puedes ver, el cuerpo humano es una maravilla de la naturaleza que merece ser conocida y cuidada. Esperamos que este artículo te haya ayudado a entender mejor cómo somos por dentro y cómo funcionamos. Si quieres saber más sobre el cuerpo humano o cualquier otro tema relacionado con la ciencia o la naturaleza, no te pierdas nuestro canal de YouTube </div>";
+          break;
+        case "item3":
+          content.innerHTML = "MENTE HUMANA";
+          break;
+        default:
+          content.innerHTML = "ESPECIE HUAMANA VIAJERO HUMANO";
+          break;
       }
     }
+
+    // Obtener los elementos del menú
+    var item1 = document.getElementById("item1");
+    var item2 = document.getElementById("item2");
+    var item3 = document.getElementById("item3");
+
+    // Añadir eventos de click a los elementos del menú
+    item1.addEventListener("click", function() {
+      changeContent("item1");
+    });
+    item2.addEventListener("click", function() {
+      changeContent("item2");
+    });
+    item3.addEventListener("click", function() {
+      changeContent("item3");
+    });
   </script>
-        <div class="footer">
-            <p>© 2023 La especie humana. Todos los derechos reservados.</p>
-        </div>
-    </div>
+     <div class="footer">
+          <p>© 2023 La especie humana. Todos los derechos reservados.</p>
+     </div>
+</div>
 </body>
 </html>
