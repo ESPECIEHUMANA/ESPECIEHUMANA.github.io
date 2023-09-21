@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+     <style>
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: lightblue;
+    }
+
+    .menu-item {
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .content {
+      margin: 20px;
+      border: 1px solid black;
+      min-height: 200px;
+    }
+  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -12,12 +31,11 @@
             <h1>La especie humana</h1>
             <p>Un sitio web para aprender sobre los orígenes, la diversidad y el futuro de los humanos.</p>
         </div>
-        <div class="nav">
-            <a href="#">Inicio</a>
-            <a href="#">Historia</a>
-            <a href="#">Evolución</a>
-            <a href="#">Curiosidades</a>
-            <a href="#">Contacto</a>
+        <div class="nav" class="menu">
+          <div class="menu-item" onclick="showContent('home')">VIAJERO HUMANO</div>
+          <div class="menu-item" onclick="showContent('about')">CUERPO HUMANO</div>
+          <div class="menu-item" onclick="showContent('contact')">MENTE HUMANA</div>
+          <div class="menu-item" onclick="showContent('contact')">ESPIRITUALIDAD</div>
         </div>
         <div class="main">
             <div class="sidebar">
@@ -38,8 +56,18 @@
                     <li><a href="#">TED - Ideas sobre la humanidad</a></li>
                 </ul>
             </div>
-            <div class="content">
-                <h2>¿Qué es la especie humana?</h2>
+            <div class="content" id="content">
+    <!-- Aquí se mostrará el contenido según el menú seleccionado -->
+            </div>
+
+            <script>
+    // Esta función recibe el nombre del menú y cambia el contenido del div con id "content"
+    function showContent(menu) {
+      var content = document.getElementById("content");
+      // Puedes cambiar el contenido según el menú que quieras mostrar
+      if (menu == "VIAJERO HUMANO") {
+        content.innerHTML = "<h2>¿Qué es la especie humana?</h2>
+            <div> 
                 <p>La especie humana es una de las muchas ramas evolutivas que se han originado a partir de un ancestro común con los chimpancés y los bonobos hace unos 6 millones de años.</p>
                 <p>Los humanos pertenecen al género Homo, que se caracteriza por tener un cerebro más grande y complejo, una postura bípeda y una capacidad para fabricar herramientas y comunicarse mediante el lenguaje.</p> 
                 <p>Dentro del género Homo, la especie humana actual es Homo sapiens sapiens, que se diferencia de otras especies extintas por tener una anatomía más moderna y refinada, un mentón prominente, una frente elevada y una menor robustez ósea.</p>
@@ -50,9 +78,53 @@
                 <a href='https://postimg.cc/0K8Brzfz' target='_blank'><img src='https://i.postimg.cc/0K8Brzfz/0dcbb81c-fa15-4b49-9ac2-1af536f9c67d.jpg' alt="Imagen de un grupo de humanos de diferentes razas y edades" border='0' alt='0dcbb81c-fa15-4b49-9ac2-1af536f9c67d'/></a>
                 <p>Los humanos se originaron en África hace unos 300.000 años, a partir de una población ancestral común con los neandertales y los denisovanos, otras dos especies extintas del género Homo. Los humanos modernos se expandieron por el resto del mundo hace unos 60.000 años, reemplazando o mezclándose con las poblaciones locales de otros homínidos. Hoy en día, los humanos habitan todos los continentes y regiones del planeta, y se estima que hay unos 7.900 millones de individuos.</p>
                 <p>Los humanos son una especie muy diversa, tanto genética como culturalmente. Existen diferentes grupos étnicos, razas, lenguas, religiones, costumbres, valores y formas de organización social entre los humanos. Sin embargo, todos los humanos comparten un origen común y una naturaleza biológica similar, y tienen más cosas en común que diferencias. Los humanos también son capaces de cooperar, comunicarse y crear vínculos afectivos entre ellos.</p>
-                <p>Los humanos son una especie en constante evolución, adaptación e innovación. Los avances científicos, tecnológicos, artísticos y culturales de los humanos han transformado el mundo y han generado nuevos desafíos y oportunidades. Los humanos tienen la responsabilidad de cuidar el planeta y a las demás especies que lo habitan, así como de buscar el bienestar y el desarrollo de toda la humanidad.</p>
+                <p>Los humanos son una especie en constante evolución, adaptación e innovación. Los avances científicos, tecnológicos, artísticos y culturales de los humanos han transformado el mundo y han generado nuevos desafíos y oportunidades. Los humanos tienen la responsabilidad de cuidar el planeta y a las demás especies que lo habitan, así como de buscar el bienestar y el desarrollo de toda la humanidad.</p>";
+          <div>
+      } else if (menu == "MENTE HUMANA") {
+        content.innerHTML = "";
+          
+      } else if (menu == "CUERPO HUMANO") {
+        content.innerHTML = "<h1>El cuerpo humano: una maravilla de la naturaleza</h1>
+              <div> 
+                  <p>El cuerpo humano es la estructura física y material del ser humano. Está formado por gran cantidad de células que trabajan juntas para realizar diferentes funciones necesarias para mantener la vida. Las células se agrupan para formar tejidos y órganos. Un conjunto de órganos agrupados que contribuyen a la misma función forman los aparatos y sistemas como el aparato digestivo y el sistema nervioso. Diferentes ciencias estudian el cuerpo humano, entre ellas la anatomía que describe la forma de las diferentes estructuras y la fisiología que estudia la función y los mecanismos que la hacen posible.[^1^][1]</p>
+                  <p>En este artículo vamos a ver las principales partes del cuerpo humano, tanto en su aspecto exterior como interno, y los sistemas que lo componen y permiten su funcionamiento.</p>
+                  <h2>Partes del cuerpo humano</h2>
+                  <p>Nuestro cuerpo se compone de ciertas partes que son comunes a todos los seres humanos, a pesar de las grandes diferencias físicas que existen entre todos nosotros. Estas partes son: la cabeza; el tronco, que a su vez se divide en tórax y abdomen; y las extremidades superiores (brazos) e inferiores (piernas).[^2^][2]</p>
+                  <h3>Cabeza</h3>
+                  <p>La cabeza es la parte superior del cuerpo, donde se encuentran algunos de los órganos de los sentidos y el cerebro. La parte anteroinferior (es decir delantera inferior) se llama cara o rostro, donde se encuentran los ojos, la boca y la nariz. La zona superior es la frente, y el extremo inferior el mentón. Si privamos la cabeza de las partes blandas, nos queda la parte ósea, la que solemos llamar calavera. Está formada por el cráneo, que protege el encéfalo y aloja el oído; y la cara, donde está el aparato de la masticación, es decir las mandíbulas, los dientes y los músculos masticadores. También se fijan en la parte ósea los músculos faciales, y se alojan los órganos de los sentidos: ojos, fosas nasales, lengua, etc.[^2^][2]</p>
+                  <h3>Tronco</h3>
+                  <p>El tronco o torso es la parte central del cuerpo. En la parte superior se encuentra la cabeza, y de sus lados arrancan las extremidades superiores e inferiores. El tronco aloja los órganos del aparato cardiopulmonar, digestivo, urinario y reproductor femenino. Está dividido en dos zonas, el tórax y el abdomen:[^2^][2]</p>
+                  <ul>
+                    <li>El tórax, cavidad toráxica o cavidad superior es una caja ósea que contiene y protege el corazón y los pulmones.</li>
+                    <li>El abdomen, cavidad abdominal o cavidad inferior contiene el estómago, intestino, hígado y páncreas, que forman parte del aparato digestivo, y los riñones y la vejiga, parte del aparato urinario. También alojan los órganos del sistema reproductor femenino.</li>
+                  </ul>
+                  <h3>Extremidades</h3>
+                  <p>Las extremidades o miembros son los órganos externos, articulados con el tronco, que cumplen funciones de locomoción y manipulación de objetos. Tenemos dos tipos de extremidades:[^2^][2]</p>
+                  <ul>
+                    <li>Extremidades superiores o torácicas: cintura escapular, brazo, antebrazo y mano.</li>
+                    <li>Extremidades inferiores o pelvianas: pelvis, muslo, rodilla, pierna, tobillo, pie.</li>
+                  </ul>
+                  <h2>Sistemas del cuerpo humano</h2>
+                  <p>El cuerpo humano tiene diferentes niveles estructurales de complejidad creciente. Está compuesto de aparatos y sistemas, que a su vez están formados por órganos. Los órganos están conformados por tejidos, que están formados por células. Las células están formadas por moléculas que están compuestas por átomos.[^1^][1]</p>
+                  <p>Los sistemas del cuerpo humano son conjuntos de órganos que cooperan para realizar una función común. Los principales sistemas son:[^3^][3]</p>
+                  <ul>
+                    <li>Sistema esquelético: formado por los huesos, las articulaciones y los cartílagos. Su función es sostener el cuerpo, proteger los órganos internos y permitir el movimiento.</li>
+                    <li>Sistema muscular: formado por los músculos, que son tejidos capaces de contraerse y relajarse. Su función es producir el movimiento, mantener la postura y generar calor.</li>
+                    <li>Sistema nervioso: formado por el encéfalo, la médula espinal y los nervios. Su función es recibir, procesar y transmitir información, coordinar las funciones del cuerpo y controlar el comportamiento.</li>
+                    <li>Sistema endocrino: formado por las glándulas endocrinas, que son órganos que producen hormonas. Su función es regular el metabolismo, el crecimiento, el desarrollo y la reproducción.</li>
+                    <li>Sistema circulatorio: formado por el corazón, los vasos sanguíneos y la sangre. Su función es transportar oxígeno, nutrientes, hormonas y desechos por todo el cuerpo.</li>
+                    <li>Sistema respiratorio: formado por las vías respiratorias (nariz, faringe, laringe, tráquea, bronquios y bronquiolos) y los pulmones. Su función es intercambiar gases entre el aire y la sangre, es decir tomar oxígeno y eliminar dióxido de carbono.</li>
+                    <li>Sistema digestivo: formado por el tubo digestivo (boca, faringe, esófago, estómago, intestino delgado e intestino grueso) y los órganos anexos (glándulas salivales, hígado y páncreas). Su función es transformar los alimentos en nutrientes que puedan ser absorbidos y utilizados por las células.</li>
+                    <li>Sistema urinario: formado por los riñones, los uréteres, la vejiga y la uretra. Su función es filtrar la sangre y eliminar los desechos metabólicos en forma de orina.</li>
+                    <li>Sistema inmunitario: formado por los órganos linfoides (médula ósea, timo, bazo, ganglios linfáticos y tejido linfoide asociado a mucosas) y las células inmunitarias (linfocitos, macrófagos, etc.). Su función es defender al cuerpo de agentes extraños o dañinos como virus, bacterias o células tumorales.</li>
+                    <li>Sistema reproductor: formado por los órganos sexuales (testículos y pene en el hombre; ovarios, trompas de Falopio, útero y vagina en la mujer) y las glándulas anexas (próstata, vesículas seminales y glándulas de Cowper en el hombre; glándulas de Bartholin en la mujer). Su función es producir gametos (espermatozoides y óvulos), hormonas sexuales y permitir la fecundación y el desarrollo del embrión.</li>
+                    <li>Sistema tegumentario: formado por la piel y sus anexos (pelo, uñas y glándulas sudoríparas y sebáceas). Su función es proteger al cuerpo de agentes externos, regular la temperatura corporal y percibir estímulos táctiles, térmicos o dolorosos.</li>
+                  </ul>
+                  <p>Como puedes ver, el cuerpo humano es una maravilla de la naturaleza que merece ser conocida y cuidada. Esperamos que este artículo te haya ayudado a entender mejor cómo somos por dentro y cómo funcionamos. Si quieres saber más sobre el cuerpo humano o cualquier otro tema relacionado con la ciencia o la naturaleza, no te pierdas nuestro canal de YouTube";
             </div>
-        </div>
+      }
+    }
+  </script>
         <div class="footer">
             <p>© 2023 La especie humana. Todos los derechos reservados.</p>
         </div>
