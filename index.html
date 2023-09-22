@@ -1,111 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	    <!-- Información -->
+    <meta name="author" content="Viajero Humano">
+    <meta name="description" content="Especiehumana web dedicada a difundir el conocimiento">
+    <meta property="og:description" content="Descripción del sitio web del Viajero Humano">
+	
+    <!-- para compartir -->
+    <meta property="og:title" content="Viajero Humano">
+    <meta property="og:image" content="https://i.postimg.cc/2yLNmVkc/og.jpg" 
+    <meta property="og:url" content="URL del sitio web">
+	<title>El Viaje Humano - Explorando la Especie Humana</title>
     <meta charset="UTF-8">
+    <meta name="description" content="Acompáñame, un viajero humano, en un viaje de descubrimiento a través de la historia, la cultura y la sociedad de nuestra especie.">
+    <meta name="keywords" content="Viajero humano, Especie humana, Homo sapiens, Evolución humana, Antropología, Historia humana, Cultura, Sociedad">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="https://i.postimg.cc/2yLNmVkc/og.jpg"  <title>VIAJERO HUMANO</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="https://i.postimg.cc/brq3NSyz/icono.jpg" type="image/jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-	@media only screen and (max-width: 600px) {
-    footer {
-        padding: 5px 0;
-        text-align: left;
-    }
-    .button-container {
-        flex-direction: column;
-    }
-    button {
-        margin: 10px auto;
-    }
-}
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f4;
-        }
-        h2 {
-            color: #333333; /* Verde */
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        header {
-            background-color: #ff6347;
-            color: #fff;
-            padding: 10px 0;
-            width: 100%;
-            text-align: center;
-        }
-        .content-container {
-            width: 90%;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease-in-out;
-            background-color: #fff;
-        }
-        .content-container:hover {
-            transform: scale(1.05);
-        }
-        img, iframe {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .content-description {
-            font-size: 14px;
-            color: #333;
-        }
-        
-        p{
-          text-align: justify;
-        }
-        
-        footer  {
-            background-color: #ff6347;
-            color: #fff;
-            padding: 10px 0;
-            width: 100%;
-            text-align: center;
-        }
-	 .content {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
-            .button-container {
-            display: flex;
-            justify-content: space-around;
-        }
-            
-        button {
-            background-color: #4CAF50; /* Verde */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: white; 
-            color: black; 
-            border: 2px solid #4CAF50;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -117,6 +31,7 @@
     <button onclick="changeContent('content3')">DIVERSIDAD</button>
     </div>
 <div id="content1" class="content active">
+	
      <main>
         <section class="content-container">
         <img src='https://i.postimg.cc/0K8Brzfz/0dcbb81c-fa15-4b49-9ac2-1af536f9c67d.jpg' text-align="center" border='0' alt='Origen de la Especie Humana'/>
@@ -128,7 +43,7 @@
             El Homo sapiens surgió hace unos 300.000 años,y se expandió por todo el mundo, reemplazando o hibridando con otras especies del género Homo.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/9lM8jiDd9J0" frameborder="0" allowfullscreen></iframe>
         </section>
-        <!-- Repite el section.content-container para cada conjunto de imagen, descripción y video que quieras agregar -->
+        <!--  -->
     </main>
 </div>
 
@@ -145,14 +60,14 @@
             las civilizaciones, las religiones, la ciencia y la tecnología.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/j3JBAzJXg9k" frameborder="0" allowfullscreen></iframe>
         </section>
-        <!-- Repite el section.content-container para cada conjunto de imagen, descripción y video que quieras agregar -->
+        <!---->
     </main>
 </div>
 
 <div id="content3" class="content">
      <main>
         <section class="content-container">
-        <img src='https://i.postimg.cc/cHJ2ZFB1/74a4b452-36a6-4e9c-9ed5-a3ea1473e2eb.jpg' text-align="center" border='0' alt='Evolucion de la Especie Humana'/>
+        <img src='https://i.postimg.cc/cHJ2ZFB1/74a4b452-36a6-4e9c-9ed5-a3ea1473e2eb.jpg' text-align="center" border='0' alt='Diversidad de la Especie Humana'/>
             
             <p class="content-description">
             <h2>Diversidad de la Especie Humana</h2>
@@ -161,19 +76,19 @@
             La diversidad cultural incluye aspectos como el idioma, la vestimenta, la alimentación, la música, la danza, las creencias, las costumbres y las leyes.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/HNEtd6nt6mY" frameborder="0" allowfullscreen></iframe>
         </section>
-        <!-- Repite el section.content-container para cada conjunto de imagen, descripción y video que quieras agregar -->
+        <!--  -->
     </main>
 </div>
 
 <div class="button-container">
-     <button onclick="changeContent('content4')">ORIGENES</button>
-    <button onclick="changeContent('content5')">EVOLUCION</button>
-    <button onclick="changeContent('content6')">DIVERSIDAD</button>
+     <button onclick="changeContent('content4')">PENSAMIENTOS</button>
+    <button onclick="changeContent('content5')">REFLEXIONES</button>
+    <button onclick="changeContent('content6')">ACTITUDES</button>
 </div>
 	<div id="content4" class="content">
      <main>
         <section class="content-container">
-        <img src='https://i.postimg.cc/rw0sM9nN/Captura-desde-2023-09-21-23-12-11.png' text-align="center" border='0' alt='Evolucion de la Especie Humana'/>
+        <img src='https://i.postimg.cc/rw0sM9nN/Captura-desde-2023-09-21-23-12-11.png' text-align="center" border='0' alt='Los pensamientos humanos '/>
             
             <p class="content-description">
             <h2>Los pensamientos humanos son una maravilla compleja y fascinante.a</h2>
@@ -184,7 +99,7 @@
 	    A pesar de los avances en la neurociencia, todavía hay mucho que no entendemos sobre cómo se generan y procesan los pensamientos en el cerebro humano.</p>
             
         </section>
-        <!-- Repite el section.content-container para cada conjunto de imagen, descripción y video que quieras agregar -->
+        <!--  -->
     </main>
 </div>
 	<div id="content5" class="content">
@@ -199,14 +114,14 @@
 	    Una actitud positiva puede ayudarnos a superar los desafíos, mientras que una actitud negativa puede limitar nuestro potencial. En última instancia, nuestra actitud es una elección que hacemos y puede ser cambiada con el tiempo y el esfuerzo.</p>
             
         </section>
-        <!-- Repite el section.content-container para cada conjunto de imagen, descripción y video que quieras agregar -->
+        <!--  -->
     </main>
 </div>
 
 	<div id="content6" class="content">
      <main>
         <section class="content-container">
-        <img src='https://i.postimg.cc/6QCQGpN7/Captura-desde-2023-09-21-23-10-47.png' text-align="center" border='0' alt='Evolucion de la Especie Humana'/>
+        <img src='https://i.postimg.cc/6QCQGpN7/Captura-desde-2023-09-21-23-10-47.png' text-align="center" border='0' alt='Actitud de la Especie Humana'/>
             
             <p class="content-description">
             <h2>nuestra existencia y crecimiento personal</h2>
@@ -216,7 +131,7 @@
 	    </p>
             
         </section>
-        <!-- Repite el section.content-container para cada conjunto de imagen, descripción y video que quieras agregar -->
+        <!--  -->
     </main>
 </div>
 <script>
