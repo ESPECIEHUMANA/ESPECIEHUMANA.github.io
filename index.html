@@ -33,6 +33,7 @@
     
     <!-- Fuentes y estilos -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <!-- Icono del sitio -->
@@ -52,9 +53,12 @@
             <li><button onclick="changeContent('content1')">ORIGENES</button></li>
             <li><button onclick="changeContent('content2')">EVOLUCION</button></li>
             <li><button onclick="changeContent('content3')">DIVERSIDAD</button></li>
+	    <li><button onclick="changeContent('content4')">PENSAMIENTOS</button></li>
+            <li><button onclick="changeContent('content5')">REFLEXIONES</button></li>
+            <li><button onclick="changeContent('content6')">ACTITUDES</button></li>
         </ul>
     </nav>
-	
+
 <div id="content1" class="content active">
     <main>
         <article>
@@ -148,13 +152,6 @@
             </figure>
         </article>
     </main>
-</div>
-
-
-<div class="button-container">
-     <button onclick="changeContent('content4')">PENSAMIENTOS</button>
-    <button onclick="changeContent('content5')">REFLEXIONES</button>
-    <button onclick="changeContent('content6')">ACTITUDES</button>
 </div>
 	
 <div id="content4" class="content">
@@ -250,7 +247,28 @@
         </article>
     </main>
 </div>
-	
+
+<!-- Botón para subir -->
+<button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="fas fa-hand-point-up"></i> IR AL MENU <i class="fas fa-hand-point-up"></i></button>
+
+<script>
+// Cuando el usuario desplaza la página 20px desde el top, muestra el botón
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Cuando el usuario hace clic en el botón, desplaza la página hasta el top del documento
+function topFunction() {
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+}
+</script>
 <script>
 function changeContent(contentId) {
     var i, content;
