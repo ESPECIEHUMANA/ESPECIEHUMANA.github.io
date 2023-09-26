@@ -2,26 +2,23 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f5f5dc; /* Un color beige claro que puede representar la piel humana */
     transition: background-color 1s;
 }
 
 header {
-    background-color: #333;
+    background-color: #8b4513; /* Un color marrón oscuro que puede representar el pelo humano */
     color: white;
     padding: 10px 0;
     text-align: center;
-    transition: background-color 1s;
 }
 
 h1 {
     margin: 0;
-    animation: color-change 2s infinite;
 }
 
-
 nav {
-    background-color: #ddd;
+    background-color: #deb887; /* Un color marrón claro que puede representar la piel humana */
     padding: 10px 0;
 }
 
@@ -35,14 +32,14 @@ ul.button-container {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #333;
+    background-color: #8b4513; /* Un color marrón oscuro que puede representar el pelo humano */
     color: white;
     cursor: pointer;
     transition: transform .2s; 
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #a0522d; /* Un color marrón medio que puede representar el pelo humano */
     transform: scale(1.1);
 }
 
@@ -70,12 +67,11 @@ img, iframe {
 }
 
 footer {
-    background-color: #333;
+    background-color: #8b4513; /* Un color marrón oscuro que puede representar el pelo humano */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
-
 /* Estilos para pantallas de tablet */
 @media (max-width: 768px) {
    h1 {
@@ -97,20 +93,17 @@ footer {
        padding: 3px 6px; 
    }
 }
-/* Estilos para pantallas de móvil */
+ul.button-container {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Esto permitirá que los elementos de la lista pasen a la siguiente línea si no hay suficiente espacio */
+}
+
 @media (max-width: 480px) {
    ul.button-container {
        flex-direction: column;
        align-items: center;
-   }
-
-   button {
-       width: 80%;
-       margin-bottom: 10px;
-       font-size: 18px;
-       border-radius: 5px;
-       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-       white-space: normal; /* Asegura que el texto del botón pasa a la siguiente línea si es demasiado largo */
-       text-align: center; /* Centra el texto dentro del botón */
    }
 }
