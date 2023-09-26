@@ -1,57 +1,30 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #f4f4f4;
-}
-
-h2 {
-    color: #333333; /* Verde */
-    font-family: Arial, sans-serif;
-    text-align: center;
+    color: #333; /* Cambia el color del texto a un gris oscuro para mejorar la legibilidad */
+    line-height: 1.6; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
 }
 
 header, footer {
-    background-color: #ff6347;
-    color: #fff;
+    background-color: #333;
+    color: #ffffff;
     padding: 10px 0;
-    width: 100%;
     text-align: center;
 }
 
-.content-container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease-in-out;
-    background-color: #fff;
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
-.content-container:hover {
-    transform: scale(1.05);
-}
-
-img, iframe {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.content-description {
-    font-size: 14px;
-    color: #333;
-}
-
-p {
-   text-align: justify;
+nav ul li button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #ffffff;
 }
 
 .content {
@@ -62,37 +35,65 @@ p {
    display: block;
 }
 
+article {
+   max-width: 900px;
+   margin: auto;
+   padding: 20px;
+}
+
+article header h2, article section h3 {
+   color: #333;
+}
+
+article section p {
+   color: #999;
+}
+
+figure img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+figure figcaption {
+   text-align:center;
+   color:#666;
+}
+
 .button-container {
-   display: flex;
-   justify-content: space-around;
+   display:flex;
+   justify-content : space-around;
+
 }
 
 button {
-   background-color: #4CAF50; /* Verde */
-   border: none;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   transition-duration: 0.4s;
-   cursor: pointer;
+   background-color : #4CAF50; /* Verde */
+   border : none ;
+   color : white ;
+   padding : 15px 32px ;
+   text-align : center ;
+   text-decoration : none ;
+   display : inline-block ;
+   font-size : 16px ;
+   margin : 4px 2px ;
+   transition-duration : 0.4s ;
+   cursor : pointer ;
 
 }
 
 button:hover {
-   background-color: white; 
-   color: black; 
-   border: 2px solid #4CAF50;
+   background-color : white ; 
+   color : black ; 
+   border : 2px solid #4CAF50;
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width : 600px) {
 
 footer {
-        padding: 5px 0;
+        padding :5px 0 ;
         text-align:left;
 
 }
