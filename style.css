@@ -1,108 +1,116 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333; /* Cambia el color del texto a un gris oscuro para mejorar la legibilidad */
-    line-height: 1.6; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
+    transition: background-color 1s;
 }
 
-header, footer {
+header {
     background-color: #333;
-    color: #ffffff;
+    color: white;
     padding: 10px 0;
     text-align: center;
+    transition: background-color 1s;
 }
 
-nav ul {
+h1 {
+    margin: 0;
+    animation: color-change 2s infinite;
+}
+
+
+nav {
+    background-color: #ddd;
+    padding: 10px 0;
+}
+
+ul.button-container {
+    list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
 }
 
-nav ul li button {
+button {
     padding: 10px 20px;
     border: none;
     background-color: #333;
-    color: #ffffff;
-}
-
-.content {
-   display: none;
-}
-
-.active {
-   display: block;
-}
-
-article {
-   max-width: 900px;
-   margin: auto;
-   padding: 20px;
-}
-
-article header h2, article section h3 {
-   color: #333;
-}
-
-article section p {
-   color: #999;
-}
-
-figure img {
-   display: block;
-   max-width: 100%;
-   height: auto;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-figure figcaption {
-   text-align:center;
-   color:#666;
-}
-
-.button-container {
-   display:flex;
-   justify-content : space-around;
-
-}
-
-button {
-   background-color : #4CAF50; /* Verde */
-   border : none ;
-   color : white ;
-   padding : 15px 32px ;
-   text-align : center ;
-   text-decoration : none ;
-   display : inline-block ;
-   font-size : 16px ;
-   margin : 4px 2px ;
-   transition-duration : 0.4s ;
-   cursor : pointer ;
-
+    color: white;
+    cursor: pointer;
+    transition: transform .2s; 
 }
 
 button:hover {
-   background-color : white ; 
-   color : black ; 
-   border : 2px solid #4CAF50;
-
+    background-color: #555;
+    transform: scale(1.1);
 }
 
-@media only screen and (max-width : 600px) {
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img, iframe {
+    max-width: 100%;
+}
 
 footer {
-        padding :5px 0 ;
-        text-align:left;
-
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
-.button-container {
-        flex-direction : column;
 
-}
-button {
-        margin :10px auto;
+/* Estilos para pantallas de tablet */
+@media (max-width: 768px) {
+   h1 {
+       font-size: 18px; 
+   }
 
+   button {
+       padding: 5px 10px; 
+   }
 }
+
+/* Estilos para pantallas de móvil */
+@media (max-width: 480px) {
+   h1 {
+       font-size: 14px; 
+   }
+
+   button {
+       padding: 3px 6px; 
+   }
+}
+/* Estilos para pantallas de móvil */
+@media (max-width: 480px) {
+   ul.button-container {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   button {
+       width: 80%;
+       margin-bottom: 10px;
+       font-size: 18px;
+       border-radius: 5px;
+       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+       white-space: normal; /* Asegura que el texto del botón pasa a la siguiente línea si es demasiado largo */
+       text-align: center; /* Centra el texto dentro del botón */
+   }
 }
