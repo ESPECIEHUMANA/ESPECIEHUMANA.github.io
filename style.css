@@ -55,6 +55,40 @@ main {
     padding: 20px;
 }
 
+.cuadro-centrado {
+    background-color: #fdf6e3;
+    border: 2px solid #657b83;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.cuadro-centrado main {
+    background-color: #eee8d5;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cuadro-centrado header {
+    background-color: #268bd;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.cuadro-centrado section {
+    background-color: #fdf6e3;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cuadro-centrado figure {
+    text-align: center;
+}
+
+.cuadro-centrado img {
+    max-width: 100%;
+}
 figure {
     display: flex;
     flex-direction: column;
