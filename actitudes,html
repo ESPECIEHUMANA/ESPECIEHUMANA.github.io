@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Viajero Humano: Reflexiones sobre las Actitudes Humanas</title>
+    <meta name="author" content="El Viajero Humano">
+    <meta name="description" content="Acompáñame, El Viajero Humano, en un viaje de reflexión sobre las actitudes humanas y cómo influyen en nuestro comportamiento y percepciones.">
+    <meta name="keywords" content="Viajero humano, Actitudes humanas, Psicología, Filosofía, Ciencia, Educación">
+    <meta http-equiv="content-language" content="es">
+    <!-- Open Graph para compartir -->
+    <meta property="og:title" content="El Viajero Humano: Reflexiones sobre las Actitudes Humanas">
+    <meta property="og:description" content="Acompáñame, El Viajero Humano, en un viaje de reflexión sobre las actitudes humanas y cómo influyen en nuestro comportamiento y percepciones.">
+    <meta property="og:image" content="https://i.postimg.cc/6QCQGpN7/Captura-desde-2023-09-21-23-10-47.png">
+    <meta property="og:url" content="https://especiehumana.github.io/actitudes.html">
+    <!-- Verificación del sitio -->
+    <meta name="google-site-verification" content="mQrWCjKFW0uK2K8j3icjyaM6mzUye0Gl2ulnNCGchpM" />
+    <meta name="msvalidate.01" content="C02D09CAC00CF4D936C87F0CC21B7C77" />
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Icono del sitio -->
+    <link rel="icon" href="https://i.postimg.cc/brq3NSyz/icono.jpg" type="image/jpeg">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://especiehumana.github.io/actitudes.html"/>
+</head>
+<body>
+    <header>
+         <h1>LA ESPECIE HUMANA</h1>
+    </header>
+	
+ 	
+    <nav>
+        <ul class="button-container">
+            <li><a href="https://especiehumana.github.io/origenes.html"><button>ORIGENES</button></li></a>
+            <li><a href="https://especiehumana.github.io/evolucion.html"><button>EVOLUCION</button></a></li>
+            <li><a href="https://especiehumana.github.io/diversidad.html"><button>DIVERSIDAD</button></a></li>
+	    <li><a href="https://especiehumana.github.io/pensamientos.html"><button>PENSAMIENTOS</button></a></li>
+            <li><a href="https://especiehumana.github.io/reflexiones.html"><button>REFLEXIONES</button></a></li>
+            <li><a href="https://especiehumana.github.io/actidudes.html"><button>ACTITUDES</button></a></li>
+        </ul>
+    </nav>
+<div class="cuadro-centrado">
+    <main>
+        <header>
+            <h1>Actitudes Humanas: Comprendiendo Nuestro Comportamiento</h1>
+        </header>
+	    <figure>
+            <img src='https://i.postimg.cc/6QCQGpN7/Captura-desde-2023-09-21-23-10-47.png' alt='Actitud de la Especie Humana'/>
+            <figcaption>Ilustración representativa de la actitud de la especie humana</figcaption>
+        </figure>
+        <section>
+            <h2>Introducción</h2>
+            <p>Las actitudes humanas son una parte integral de nuestra existencia y crecimiento personal. Son un conjunto de emociones, creencias y comportamientos que se forman a través de la experiencia y la educación[^1^][8]. Nos permiten mirar hacia adentro, evaluar nuestras acciones y decisiones, y aprender de nuestras experiencias.</p>
+        </section>
+        <section>
+            <h2>El Espejo de las Actitudes</h2>
+            <p>Las actitudes pueden ser un espejo que nos muestra quiénes somos realmente, más allá de nuestras percepciones superficiales. Nos ayudan a entender nuestras fortalezas y debilidades, y a trazar un camino hacia la mejora personal[^1^][8]. ¿Sabías que las actitudes pueden influir en nuestras decisiones y acciones, y que una actitud positiva puede ayudarnos a superar los desafíos[^1^][8]?</p>
+        </section>
+        <section>
+            <h2>Comprendiendo a Nosotros Mismos y al Mundo</h2>
+            <p>A través de la reflexión sobre nuestras actitudes, podemos ganar una mayor comprensión de nosotros mismos y del mundo que nos rodea[^1^][8]. Esto nos permite vivir vidas más auténticas y significativas. La reflexión nos permite tomar decisiones más informadas y conscientes en nuestra vida diaria. ¿Alguna vez has reflexionado sobre cómo tus actitudes influyen en tu comportamiento?</p>
+        </section>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0lfd0x1JZY" frameborder="0" allowfullscreen></iframe>
+            <figcaption>Video educativo sobre Nuestra Existencia y Crecimiento Personal</figcaption>
+        </figure>
+    </main>
+</div>
+<!-- Botón para subir -->
+<button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="fas fa-hand-point-up"></i> IR AL MENU <i class="fas fa-hand-point-up"></i></button>
+
+<script>
+// Cuando el usuario desplaza la página 20px desde el top, muestra el botón
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Cuando el usuario hace clic en el botón, desplaza la página hasta el top del documento
+function topFunction() {
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+}
+</script>
+
+   	<footer>
+        		<span>© 2023 VIEAJERO HUMANO</span><br>
+			        Especiehumana es una web dedicada a difundir el conocimiento,su origen,evolución,diversidad y cultura. 
+			        Nuestro objetivo es fomentar el interés, la curiosidad y el respeto por la humanidad en todas sus expresiones.
+			        En esta web encontrarás artículos, vídeos, imágenes y recursos educativos sobre temas relacionados con la antropología, la historia, la sociología, la psicología y otras ciencias humanas.
+    	</footer>
+</body>
+</html>
