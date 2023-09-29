@@ -82,7 +82,36 @@
 
     </main>
 </div>
-	
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('.button-container li a');
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            loadPage(this.href, this.innerText);
+        });
+    });
+});
+
+function loadPage(url, pageTitle) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                var content = document.querySelector('#content');
+                content.innerHTML = '<div class="loading">Preparando tu viaje a ' + pageTitle + '...</div>';
+                setTimeout(function() {
+                    content.innerHTML = xhr.responseText;
+                }, 2000);
+            } else {
+                console.error('Error loading page');
+            }
+        }
+    };
+    xhr.send();
+}
+</script>
 <!-- Botón para subir -->
 <button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="fas fa-hand-point-up"></i> IR AL MENU <i class="fas fa-hand-point-up"></i></button>
 
