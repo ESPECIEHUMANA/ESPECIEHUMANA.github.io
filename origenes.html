@@ -86,7 +86,25 @@
 
     </main>
   </div>
-	
+	<script>
+// Cuando el usuario desplaza la página 20px desde el top, muestra el botón
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Cuando el usuario hace clic en el botón, desplaza la página hasta el top del documento
+function topFunction() {
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+}
+</script>
+
     <footer>
         <span>© 2023 VIEAJERO HUMANO</span><br>
         Especiehumana es una web dedicada a difundir el conocimiento,su origen,evolución,diversidad y cultura.
