@@ -1,204 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5dc; /* Un color beige claro que puede representar la piel humana */
-    transition: background-color 1s;
+    background-color: #85C1E9;
+    color: #154360; 
 }
-
-header {
-    background-color: #8b4513; /* Un color marrón oscuro que puede representar el pelo humano */
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+p {
+    font-size: 16px; /* Tamaño de fuente legible */
+    line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+    color: #333; /* Color de texto oscuro para contraste */
+    text-align: justify; /* Alineación justificada para un aspecto limpio */
+    text-indent: 50px; /* Sangría en la primera línea de cada párrafo */
 }
-
-h1 {
-    margin: 0;
+a {
+    color: #154360; 
+    text-decoration: none;
 }
-
+a:hover {
+    color: #8b4513; 
+}
 nav {
-    background-color: #deb887; /* Un color marrón claro que puede representar la piel humana */
+    background-color: #3C6478; 
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
-
 ul.button-container {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Esto permitirá que los elementos de la lista pasen a la siguiente línea si no hay suficiente espacio */
 }
-
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #8b4513; /* Un color marrón oscuro que puede representar el pelo humano */
+    background-color: #5DADE2; 
     color: white;
     cursor: pointer;
     transition: transform .2s, background-color .5s ease-in-out; 
-}
-
-button:hover {
-    background-color: #a0522d; /* Un color marrón medio que puede representar el pelo humano */
-    transform: scale(1.1);
-}
-
-.content {
-    display: none;
-}
-
-.content.active {
-    display: block;
-}
-
-main {
-    padding: 20px;
-}
-
-.cuadro-centrado {
-    background-color: #fdf6e3;
-    border: 2px solid #657b83;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.cuadro-centrado main {
-    background-color: #eee8d5;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.cuadro-centrado header {
-    background-color: #614510;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.cuadro-centrado section {
-    background-color: #fdf6e3;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.cuadro-centrado figure {
-    text-align: center;
-}
-
-.cuadro-centrado img {
-    max-width: 100%;
-}
-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-}
-
-img, iframe {
-    max-width: 100%;
-}
-
-footer {
-    background-color: #8b4513; /* Un color marrón oscuro que puede representar el pelo humano */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Estilos para pantallas de tablet */
-@media (max-width: 768px) {
-   h1 {
-       font-size: 18px; 
-   }
-
-   button {
-       padding: 5px 10px; 
-   }
-}
-
-/* Estilos para pantallas de móvil */
-@media (max-width: 480px) {
-   h1 {
-       font-size: 14px; 
-   }
-
-   button {
-       padding: 10px 20px; 
-       font-size: 16px;
-       margin-bottom: 10px;
-   }
-}
-
-ul.button-container {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Esto permitirá que los elementos de la lista pasen a la siguiente línea si no hay suficiente espacio */
-}
-
-@media (max-width: 480px) {
-   ul.button-container {
-       flex-direction: column;
-       align-items: center;
-   }
-}
-
-h1, h2, p {
-    transition: color .5s ease-in-out;
-  
-}
-
-
-
-h1:hover, h2:hover, p:hover {
-    color: #a0522d; /* Cambia el color del texto al pasar el ratón por encima */
-}
-
-img, iframe {
-    transition: transform .5s ease-in-out;
-}
-
-img:hover, iframe:hover {
-    transform: scale(1.1); /* Aumenta el tamaño de las imágenes y los iframes al pasar el ratón por encima */
-}
-
-.content-container {
-    transition: background-color .5s ease-in-out;
-}
-
-.content-container:hover {
-    background-color: #f5f5dc; /* Cambia el color de fondo del contenedor al pasar el ratón por encima */
-}
-@keyframes pulse {
-    0% {opacity: 1;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
-}
-
-.loading {
-    animation: pulse 1s infinite;
-    color: rgb(153 157 29);
-    font-size: 20px;
-    text-align: center;
 }
 nav ul {
   list-style-type: none;
   padding: 0;
 }
-
 nav li {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #e9ec93;
+  background-color: #85C1E9; 
   border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  color: #CB4335; /* Un rojo intenso que puede representar la pasión y la emoción humanas */
+button:hover {
+    background-color: #3498DB; 
+    transform: scale(1.1);
+}
+header {
+    background-color: #154360; 
+    color: #f5f5dc; 
+    padding: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif; /
+}
+footer {
+    background-color: #154360; 
+    color: #f5f5dc; 
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Orbitron', sans-serif; 
+}
+.cuadro-centrado {
+   background-color :#fdf6e3 ;
+   border-radius :15px ;
+   border : solid #154360 ;
+   box-shadow :10px -10px #154360;
+   transition : all .5s ease;
+   padding :20px ;
+   margin :20px auto ;
+   max-width :800px ;
+}
+.cuadro-centrado main {
+   background-color :#eee8d5 ;
+   padding :10px ;
+   margin-bottom :20px ;
+}
+.cuadro-centrado header {
+   background-color :#89bfe1 ;
+   color :#000 ;
+   padding :10px ;
+   text-align :center ;
+   font-family :'Playfair Display', serif ;/* una fuente antigua y llamativa*/
+}
+.cuadro-centrado section {
+   background-color :#85C1E9 ;
+   padding :10px ;
+   margin-bottom :20px ;
+   border :2px solid #657b83 ;
+}
+.cuadro-centrado figure {
+   text-align :center ;
+}
+.cuadro-centrado img {
+   max-width :100% ;
+   border-radius :15px ;
+}
+figure {
+   display :flex ;
+   flex-direction :column ;
+   align-items :center ;
+   text-align:center ;
 }
