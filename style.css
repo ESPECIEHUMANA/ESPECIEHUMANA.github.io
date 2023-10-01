@@ -123,6 +123,7 @@ figure {
    text-align:center ;
 }
 
+
 /* Estilos CSS para pantallas con un ancho máximo de 600px (como teléfonos móviles) */
 @media only screen and (max-width: 600px) {
 
