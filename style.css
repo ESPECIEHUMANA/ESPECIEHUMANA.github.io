@@ -123,6 +123,19 @@ figure {
    text-align:center ;
 }
 
+iframe {
+    width: 100%; /* Asegura que el iframe ocupe todo el ancho de su contenedor */
+    border: none; /* Elimina el borde del iframe */
+    display: block; /* Asegura que el iframe se muestre como un bloque, ocupando toda la línea */
+    margin: 0 auto; /* Centra el iframe horizontalmente en su contenedor */
+}
+
+/* Estilos CSS para pantallas con un ancho máximo de 600px (como teléfonos móviles) */
+@media only screen and (max-width: 600px) {
+    iframe {
+        height: 300px; /* Establece una altura fija para el iframe en dispositivos móviles */
+    }
+}
 
 /* Estilos CSS para pantallas con un ancho máximo de 600px (como teléfonos móviles) */
 @media only screen and (max-width: 600px) {
