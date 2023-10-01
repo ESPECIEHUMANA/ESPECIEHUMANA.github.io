@@ -2,31 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente que parece escrita a mano */
+    font-family: 'Comic Sans MS', 'cursive', 'sans-serif';
     margin: 0;
     padding: 0;
-    background-color: #F3F3F3; /* Un fondo claro para no cansar la vista */
-    color: #333; /* Un color de texto oscuro para un buen contraste */
+    background-color: #F5F5F5; /* Un fondo claro para no cansar la vista */
+    color: #424242; /* Un color de texto oscuro para un buen contraste */
 }
 
 p {
-    font-size: 16px; 
+    font-size: 25px; 
     line-height: 1.5; 
-    color: #333; 
+    color: #424242; 
     text-align: justify; 
     text-indent: 50px; 
 }
 
 a {
-    color: #FF5722; /* Un color brillante para los enlaces */
+    color: #FF9800; /* Un color brillante para los enlaces */
 }
 
 a:hover {
-    color: #8b4513; 
+    color: #E65100; 
 }
 
 nav {
-    background-color: #3C6478; 
+    background-color: #607D8B; 
     padding: 10px 0;
 }
 
@@ -41,7 +41,7 @@ ul.button-container {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #5DADE2; 
+    background-color: #9E9E9E; 
     color: white;
     cursor: pointer;
     transition: transform .2s, background-color .5s ease-in-out; 
@@ -55,56 +55,56 @@ nav ul {
 nav li {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #85C1E9; 
+  background-color: #BDBDBD; 
   border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 button:hover {
-    background-color: #3498DB; 
+    background-color: #757575; 
     transform: scale(1.1);
 }
 
 header {
-    background-color: #154360; 
-    color: #f5f5dc; 
+    background-color: #455A64; 
+    color: #fff; 
     padding: 10px;
     text-align: center;
 }
 
 footer {
-    background-color: #154360; 
+    background-color: #455A64; 
     color: #f5f5dc; 
     text-align: center;
     padding: 20px 0;
 }
 
 .cuadro-centrado {
-   background-color :#fdf6e3 ;
+   background-color :#FFF9C4 ;
    border-radius :15px ;
-   border : solid #154360 ;
-   box-shadow :10px -10px #154360;
+   border : solid #455A64 ;
+   box-shadow :10px -10px #455A64 ;
    transition : all .5s ease;
    padding :20px ;
    margin :20px auto ;
    max-width :800px ;
 }
 .cuadro-centrado main {
-   background-color :#eee8d5 ;
+   background-color :#FFF59D ;
    padding :10px ;
    margin-bottom :20px ;
 }
 .cuadro-centrado header {
-   background-color :#89bfe1 ;
+   background-color :#CACACA ;
    color :#000 ;
    padding :10px ;
    text-align :center ;
 }
 .cuadro-centrado section {
-   background-color :#85C1E9 ;
+   background-color :#BDBDBD ;
    padding :10px ;
    margin-bottom :20px ;
-   border :2px solid #657b83 ;
+   border :2px solid #424242 ;
 }
 .cuadro-centrado figure {
    text-align :center ;
@@ -125,6 +125,10 @@ iframe {
     border: none; /* Elimina el borde del iframe */
     display: block; /* Asegura que el iframe se muestre como un bloque, ocupando toda la línea */
     margin: 0 auto; /* Centra el iframe horizontalmente en su contenedor */
+}
+
+#myBtn {
+  margin:auto;
 }
 
 /* Estilos CSS para pantallas con un ancho máximo de 600px (como teléfonos móviles) */
@@ -153,6 +157,7 @@ iframe {
      button{
         width:auto;/* Permite que los botones ocupen todo el ancho en pantallas pequeñas */
      }
+}
 
      /* Centra el texto en los encabezados y pies de página para una mejor apariencia en dispositivos móviles
 
