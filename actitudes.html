@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>El Viajero Humano: Reflexiones sobre las Actitudes Humanas</title>
     <meta name="author" content="El Viajero Humano">
     <meta name="description" content="Acompáñame, El Viajero Humano, en un viaje de reflexión sobre las actitudes humanas y cómo influyen en nuestro comportamiento y percepciones.">
     <meta name="keywords" content="Viajero humano, Actitudes humanas, Psicología, Filosofía, Ciencia, Educación">
@@ -18,147 +17,166 @@
     <meta name="google-site-verification" content="mQrWCjKFW0uK2K8j3icjyaM6mzUye0Gl2ulnNCGchpM" />
     <meta name="msvalidate.01" content="C02D09CAC00CF4D936C87F0CC21B7C77" />
     <!-- Fuentes y estilos -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Icono del sitio -->
     <link rel="icon" href="https://i.postimg.cc/brq3NSyz/icono.jpg" type="image/jpeg">
     <!-- Canonical URL -->
     <link rel="canonical" href="https://especiehumana.github.io/actitudes.html"/>
+  
+  
+    <title>Tu Video de YouTube</title>
+    <link rel="stylesheet" href="styles.css">
+      <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "VideoObject",
+                "name": "Transformando la Mentalidad: Superando Pensamientos Negativos y Fomentando el Crecimiento Personal",
+                "description": " En este episodio, nos adentramos en el fascinante mundo del pensamiento humano. Exploramos cómo nuestros pensamientos, especialmente los negativos, pueden afectar nuestra salud mental y bienestar.",
+                "thumbnailUrl": "https://i9.ytimg.com/vi/cVTP3WxEOno/mqdefault.jpg?sqp=CJjBh6kG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYZSA_KGUwDw==&rs=AOn4CLADkJ2O5MqWTFPdZwJQlJRC3DgRjg",
+                "uploadDate": "2023-10-05T22:00:00.000Z",
+                "contentUrl": "https://www.youtube.com/watch?v=cVTP3WxEOno",
+                "embedUrl": "https://www.youtube.com/embed/cVTP3WxEOno"
+            },
+            {
+                "@type": "VideoObject",
+                "name": "Cambia tu forma de pensar y cambia tu vida",
+                "description": "Cuando cambiamos nuestra forma de pensar, cambiamos nuestra perspectiva del mundo. Empezamos a ver las oportunidades en lugar de los obstáculos. Empezamos a creer en nosotros mismos y en nuestras posibilidades.",
+                "thumbnailUrl": "https://i9.ytimg.com/vi/ZRXl5_maBFs/mqdefault.jpg?sqp=CMTDh6kG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYGyBoKHIwDw==&rs=AOn4CLBJZZvYOX2l8q8CTZp7EHoEm1BcFA",
+                "uploadDate": "2023-10-06T22:00:00.000Z",
+                "contentUrl": "https://www.youtube.com/watch?v=ZRXl5_maBFs",
+                "embedUrl": "https://www.youtube.com/embed/ZRXl5_maBFs"
+            },
+            {
+                "@type": "VideoObject",
+                "name": "El Baile de la Vida: Navegando entre el Individualismo y el Colectivismo",
+                "description": "La dualidad entre el individualismo y el colectivismo es un baile delicado, pero cuando se equilibra correctamente, puede llevar a la armonía en todos los aspectos de nuestras vidas. En el trabajo, este equilibrio puede ser la clave para un ambiente de trabajo productivo y satisfactorio.",
+                "thumbnailUrl": "https://i9.ytimg.com/vi/Y7RJyQaSgUo/mqdefault.jpg?sqp=COzdhakG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLDXVGhSVcAL8CLIZ-PteNZN1-bZtQ",
+                "uploadDate": "1 oct 2023",
+                "contentUrl": "https://www.youtube.com/watch?v=aCWyxsLEJq8",
+                "embedUrl": "https://www.youtube.com/embed/aCWyxsLEJq8"
+            }
+        ]
+    }
+    </script>
+
 </head>
+  
 <body>
-	
-    <header>
-         <h1>ACTITUDES HUMANAS</h1>
+  <h1 id="video-title">Transformando la Mentalidad</h1>
+    <header class="cuadro-centrado section">
+              <button id="prev-button">Anterior</button>
+<button id="next-button">Siguiente</button>  
+        <nav>
+            <ul>
+                <li><a href="#descripcion">Descripción</a></li>
+                <li><a href="#informacion">Información Adicional</a></li>
+            </ul>
+        </nav>
+
+<button id="cambiarPagina">Cambiar de tema</button>
+
+<script>
+fetch('paginas.txt')
+    .then(response => response.text())
+    .then(data => {
+        var paginas = data.split('\n');
+
+        document.getElementById('cambiarPagina').addEventListener('click', function() {
+            var paginaAleatoria = paginas[Math.floor(Math.random() * paginas.length)];
+            window.location.href = paginaAleatoria;
+        });
+    })
+    .catch(error => console.error(error));
+</script>
+      
     </header>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
 
+<script>
+    var videoIndex = 0;
+    var videos = [
+        {id: 'cVTP3WxEOno', title: 'Transformando la Mentalidad', description: 'Descripción del Video 1', info: 'Información Adicional 1'},
+        {id: 'ZRXl5_maBFs', title: 'Cambia tu forma de pensar y cambia tu vida', description: 'Descripción del Video 2', info: 'Información Adicional 2'},
+        {id: 'aCWyxsLEJq8', title: 'El Baile de la Vida: Navegando entre el Individualismo y el Colectivismo', description: 'Descripción del Video 3', info: 'Información Adicional 3'}
+    ];
 
-<div class="cuadro-centrado" itemscope itemtype="http://schema.org/Article">
-    <main>
-        <header itemscope itemtype="http://schema.org/WPHeader">
-            <h1 itemprop="headline">Actitudes Humanas: Comprendiendo Nuestro Comportamiento</h1>
-            <nav>
-                <ul>
-                    <li><a href="#conexiones" itemprop="significantLink">Conexiones Humanas:  El Poder Transformador de las Relaciones</a></li>
-                    <li><a href="#empatia" itemprop="significantLink">El Espejo de las Actitudes</a></li>
-                    <li><a href="#poder" itemprop="significantLink">el poder de nuestra mente, más allá de nuestras circunstancias</a></li>
-                </ul>
-            </nav>
-        </header>
+    function changeVideo(index) {
+        videoIndex = index;
+        document.getElementById('video-frame').src = 'https://www.youtube.com/embed/' + videos[videoIndex].id;
+        document.getElementById('video-title').innerText = videos[videoIndex].title;
+        var descriptions = document.getElementsByClassName('description');
+        var infos = document.getElementsByClassName('info');
+        for (var i = 0; i < descriptions.length; i++) {
+            descriptions[i].classList.add('hidden');
+            infos[i].classList.add('hidden');
+        }
+        document.getElementById('description-' + videoIndex).classList.remove('hidden');
+        document.getElementById('info-' + videoIndex).classList.remove('hidden');
+    }
 
-        <section id="conexiones"  itemprop="articleBody">
-            <h2 itemprop="headline">Conexiones Humanas:  El Poder Transformador de las Relaciones</h2>
-            <p itemprop="articleBody">En ‘Conexiones Humanas: El Poder Transformador de las Relaciones’, exploramos la profunda influencia que las relaciones humanas tienen en nuestras vidas. Este video motivador destaca cómo nuestras interacciones y conexiones con los demás pueden ser una fuente de inspiración, crecimiento y cambio positivo. A través de historias conmovedoras y perspectivas inspiradoras, descubrimos cómo las relaciones humanas pueden enriquecer nuestras vidas, ayudarnos a superar desafíos y abrirnos a nuevas posibilidades. Ya sea una amistad duradera, un vínculo familiar o una interacción casual, cada relación tiene el potencial de transformarnos y ayudarnos a entender mejor nuestra humanidad. Únete a nosotros en este viaje inspirador y descubre el poder transformador de las relaciones humanas.
+    document.getElementById('prev-button').addEventListener('click', function() {
+        var newIndex = (videoIndex - 1 + videos.length) % videos.length;
+        changeVideo(newIndex);
+    });
 
-En Conexiones Humanas, no solo exploramos las relaciones en su superficie, sino que profundizamos en el corazón de lo que realmente significa conectarse con otro ser humano. Cada relación que formamos es un viaje único, lleno de altibajos, alegrías y desafíos, y es a través de estas experiencias compartidas que realmente comenzamos a entender quiénes somos.</p>
+    document.getElementById('next-button').addEventListener('click', function() {
+        var newIndex = (videoIndex + 1) % videos.length;
+        changeVideo(newIndex);
+    });
+</script>
 
-            <figure itemscope itemtype="http://schema.org/VideoObject">
-                <meta itemprop="name" content="Video educativo sobre Conexiones Humanas:  El Poder Transformador de las Relaciones">
-                <meta itemprop="description" content="Este video explora El Poder Transformador de las Relaciones’, exploramos la profunda influencia que las relaciones humanas tienen en nuestras vidas.">
-                <meta itemprop="thumbnailUrl" content="https://i.postimg.cc/qRnS685X/actitudes-humanas-c-mo-influyen-en-nuestro-comportamiento.png">
-                <meta itemprop="uploadDate" content="2023-09-28">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/HNEtd6nt6mY">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HNEtd6nt6mY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <figcaption>Video educativo sobre Nuestra Existencia y Crecimiento Personal</figcaption>
-            </figure>
-
-            <h2>Introducción</h2>
-            <p>El video "Conexiones Humanas: El Poder Transformador de las Relaciones" nos lleva a través de una serie de historias inspiradoras que destacan la belleza inherente de nuestras conexiones humanas. Verás cómo las relaciones pueden actuar como un catalizador para el crecimiento personal, impulsándonos a alcanzar nuevas alturas y a superar los obstáculos que se nos presentan.</p>
-
-            <h2>El Impacto de las Relaciones</h2>
-            <p>Pero más allá del crecimiento personal, este video también destaca cómo nuestras relaciones tienen el poder de impactar el mundo que nos rodea. A través de nuestras acciones y palabras, tenemos la capacidad de influir en los demás de maneras significativas, creando ondas de cambio positivo que pueden extenderse más allá de nuestro círculo inmediato.</p>
-
-            <h2>La Transformación a través de las Relaciones</h2>
-            <p>Así que únete a nosotros en este viaje emocional y descubre cómo puedes aprovechar el poder de tus relaciones para transformar no solo tu vida, sino también el mundo a tu alrededor. Porque al final del día, somos seres sociales, y es a través de nuestras conexiones con los demás que encontramos nuestro propósito y significado.</p>
-
-            <h2>'El Eco de las Relaciones: Tejiendo la Trama Humana'</h2>
-            <p>Descubre el impacto profundo y duradero de las relaciones humanas en ‘El Eco de las Relaciones: Tejiendo la Trama Humana’. Este video motivador te invita a explorar cómo nuestras conexiones con los demás pueden ser una fuente de inspiración, fortaleza y transformación.</p>
-
-            <h2>Tejiendo la Trama Humana</h2>
-            <p>Cada relación que formamos es un hilo único en la trama de nuestra vida. Estos hilos se entrelazan, creando un tapiz rico y vibrante que refleja nuestra humanidad compartida. A través de historias conmovedoras y perspectivas inspiradoras, este video destaca cómo estas conexiones pueden ayudarnos a superar desafíos, celebrar triunfos y descubrir nuevas posibilidades.</p>
-
-            <h2>Inspirando Cambio Positivo</h2>
-            <p>Pero nuestras relaciones no solo nos afectan a nivel personal. También tienen el poder de crear ondas de cambio que se extienden más allá de nosotros mismos. A través de nuestras palabras y acciones, podemos influir en los demás e inspirar un cambio positivo en el mundo.</p>
-
-            <h2>Únete al Viaje</h2>
-            <p>Así que únete a nosotros en este viaje emocional y descubre cómo puedes tejer tu propia trama humana. Porque al final del día, somos más que individuos aislados. Somos parte de una comunidad global interconectada, y es a través de nuestras relaciones que encontramos nuestro lugar en ella.</p>
+<main class="cuadro-centrado">
+   <section id="video">
+            <h2>Video</h2>
+       <iframe id="video-frame" width="560" height="315" src="https://www.youtube.com/embed/cVTP3WxEOno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-    </main>
-</div>
-<div class="cuadro-centrado" itemscope itemtype="http://schema.org/Article">
-    <main>
-        
-        <section id="empatia">
+    <article itemprop="description">
+        <section id="descripcion">
+            <h2>Descripción</h2>
+            <p id="description-0" class="description">A lo largo del video, aprenderás a reconocer y desafiar tus pensamientos negativos, a desarrollar una perspectiva más positiva y a cultivar una mayor autocompasión.
 
-            <figure itemscope itemtype="http://schema.org/VideoObject">
-                <meta itemprop="name" content="Video educativo sobre La dualidad humana es un concepto fascinante que se refiere a la capacidad de los seres humanos para albergar dos naturalezas opuestas dentro de sí mismos. Por un lado, somos capaces de actos de generosidad y bondad inmensurables, y por otro, podemos ser egoístas y codiciosos. Esta dualidad se refleja en el dicho “cuanto más tienes, más quieres”.">
-                <meta itemprop="description" content="La empatía infinita.">
-                <meta itemprop="thumbnailUrl" content="https://i.postimg.cc/qRnS685X/actitudes-humanas.png">
-                <meta itemprop="uploadDate" content="2023-09-28">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/eWoxid9Vx5E ">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eWoxid9Vx5E" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <figcaption>Video educativo sobre La empatía infinita</figcaption>
-            </figure>
+Así que si estás listo para embarcarte en este viaje de autodescubrimiento y crecimiento personal, ¡dale al botón de reproducción y comienza a transformar tu mentalidad hoy mismo! 
 
-<article itemscope itemtype="http://schema.org/Article">
-    <header>
-        <h1 itemprop="headline">La empatía infinita: el secreto para integrar nuestra dualidad humana y vivir en armonía</h1>
-    </header>
+Recuerda, no eres tus pensamientos. Eres el observador de tus pensamientos. Y como observador, tienes el poder de cambiar tu perspectiva. No te definas por tus pensamientos negativos, sino por tu capacidad para superarlos y crecer a partir de ellos. Eres más fuerte de lo que piensas.” ¡Sigue adelante! 💪</p>
+            <p id="description-1" class="description hidden">Esto puede ser un desafío, pero es posible. Con práctica, podemos aprender a identificar y superar los pensamientos distorsionados que nos impiden ser felices y exitosos.
 
-  <section itemprop="articleBody">
-    <h2>Introducción</h2>
-    <p>El video "La empatía infinita: el secreto para integrar nuestra dualidad humana y vivir en armonía" nos invita a explorar la empatía como una herramienta poderosa para comprendernos a nosotros mismos y a los demás. A través de historias inspiradoras y perspectivas motivadoras, descubriremos cómo la empatía puede enriquecer nuestras vidas, ayudarnos a superar desafíos y abrirnos a nuevas posibilidades.</p>
+Cuando cambiamos nuestra forma de pensar, cambiamos nuestra perspectiva del mundo. Empezamos a ver las oportunidades en lugar de los obstáculos. Empezamos a creer en nosotros mismos y en nuestras posibilidades.
 
-    <h2>Cuerpo</h2>
-    <h3>Enriquecer nuestras vidas</h3>
-    <p>La empatía nos brinda una conexión más profunda con los demás. Una joven comparte cómo la empatía de su mejor amiga la ayudó a superar la depresión. Un hombre comparte cómo la empatía de su familia lo apoyó cuando perdió su trabajo.</p>
+Esto puede conducir a cambios positivos en nuestras vidas, como una mayor felicidad, satisfacción y éxito.
 
-    <h3>Superar desafíos</h3>
-    <p>La empatía nos brinda fuerza y aliento para enfrentar los desafíos de la vida. Una mujer comparte cómo la empatía de su esposo la ayudó a superar un diagnóstico de cáncer. Un hombre comparte cómo la empatía de sus amigos lo ayudó a recuperarse de una adicción.</p>
+Motivación</p>
+            <p id="description-2" class="description hidden">Recuerda, cada uno de nosotros tiene un papel único que desempeñar, con habilidades y talentos individuales que nos hacen indispensables. Pero al mismo tiempo, somos parte de un equipo más grande, y nuestro éxito individual contribuye al éxito del grupo.
 
-    <h3>Abrirnos a nuevas posibilidades</h3>
-    <p>La empatía nos exponen a nuevas ideas y experiencias. Una joven comparte cómo su mentor, lleno de empatía, la inspiró a seguir su sueño de convertirse en artista. Un hombre comparte cómo su viaje a otro país lo ayudó a crecer como persona gracias a la empatía que experimentó.</p>
+Así que no tengas miedo de brillar como individuo. Pero también recuerda que no estás solo. Estás respaldado por tu equipo, y juntos, pueden lograr grandes cosas. Mantén este equilibrio en mente, y verás cómo se transforma tu vida laboral.</p>
+          
+        </section>
+       
+    </article>
+</main>
 
-    <h2>Conclusión</h2>
-    <p>La empatía tiene el potencial de transformarnos y ayudarnos a entender mejor nuestra humanidad. Cada relación es un viaje único, lleno de altibajos, alegrías y desafíos. Es a través de estas experiencias compartidas que realmente comenzamos a entender quiénes somos.</p>
+<aside id="informacion"class="cuadro-centrado">
+    <h2>Información Adicional</h2>
+    <p id="info-0" class="info">cada pensamiento que tienes es una semilla que plantas en el jardín de tu mente. No todas las semillas florecen en árboles frondosos, algunas pueden convertirse en hierbas dañinas. Pero tú eres el jardinero. Tienes la capacidad de regar las semillas positivas y arrancar las negativas antes de que tomen raíz. No subestimes tu poder para cultivar un jardín mental lleno de auto-compasión, resiliencia y amor propio. Eres más fuerte de lo que piensas y mereces toda la felicidad y el éxito que el mundo tiene para ofrecer. ¡Sigue adelante, valiente jardinero! 💪🌱”</p>
+    <p id="info-1" class="info hidden">¿Si estás buscando cambiar tu vida, empieza por cambiar tu forma de pensar. Aquí hay algunos consejos que pueden ayudarte:
 
-    <h2>Llamada a la acción</h2>
-    <p>Aprovecha el poder de la empatía para transformar tu vida y el mundo que te rodea. Porque al final del día, somos seres sociales, y es a través de nuestras conexiones con los demás que encontramos nuestro propósito y significado.</p>
+    Presta atención a tus pensamientos. ¿Hay algún patrón en los pensamientos que te hacen sentir mal?
+    Etiqueta los pensamientos distorsionados. Cuando identifiques un pensamiento distorsionado, etiquetalo como tal. Esto te ayudará a distanciarte de él y a verlo con más objetividad.
+    Reemplaza los pensamientos distorsionados con pensamientos más realistas. Intenta basar tu nuevo pensamiento en la evidencia que tienes.
+    Practica el pensamiento más realista. Cuanto más lo practiques, más natural te parecerá.</p>
+    <p id="info-2" class="info hidden">¡Adelante, muestra al mundo lo que tienes para ofrecer! Tu individualidad es tu fortaleza. Pero recuerda, la verdadera magia ocurre cuando unimos nuestras fortalezas para alcanzar un objetivo común. ¡Juntos somos más fuertes! ¡Adelante y brilla! 🌟
 
-    <h2>Recomendaciones para una weeb</h2>
-    <p>Este video puede ser especialmente inspirador para las weebs que valoran las relaciones personales. El video destaca la belleza y el poder de las conexiones humanas, y puede ayudar a las weebs a apreciar aún más las relaciones que tienen en sus vidas. Además, el video puede ser una fuente de apoyo para las weebs que están pasando por un momento difícil. Las historias inspiradoras del video pueden proporcionarles esperanza y aliento para seguir adelante.</p>
+La dualidad entre el individualismo y el colectivismo no es una lucha, sino más bien un equilibrio. Como un águila que necesita ambas alas para volar, necesitamos tanto nuestra individualidad como nuestra comunidad para alcanzar nuestras metas. Tu singularidad es tu superpoder, y tu capacidad para colaborar y conectarte con los demás es lo que te permite volar alto.</p>
+</aside>
 
-    <h2>Preguntas para reflexionar</h2>
-    <ul>
-        <li>¿Cómo ha impactado la empatía en mi vida?</li>
-        <li>¿Cómo puedo aprovechar el poder de la empatía para transformar mi vida?</li>
-        <li>¿Cómo puedo usar la empatía para inspirar un cambio positivo en el mundo?</li>
-    </ul>
-
-    <h2>Actividades</h2>
-    <ul>
-        <li>Escribir sobre una relación que ha tenido un impacto positivo en tu vida gracias a la empatía.</li>
-        <li>Compartir el video con un amigo o familiar y discutir su impacto.</li>
-        <li>Pensar en cómo puedes usar tus relaciones empáticas para hacer del mundo un lugar mejor.</li>
-    </ul>
-    
-</section>
- 
-   <section itemprop="articleBody" id="poder">
-      <p>Las actitudes humanas son una parte integral de nuestra personalidad y nos definen como individuos. Son patrones de pensamiento, sentimiento y comportamiento que reflejan nuestra disposición hacia nosotros mismos, los demás y el mundo que nos rodea. Las actitudes pueden ser positivas o negativas, fuertes o débiles, y pueden cambiar con el tiempo en respuesta a nuevas experiencias e información.</p>
-            <figure itemscope itemtype="http://schema.org/VideoObject">
-                <meta itemprop="name" content="Video educativo sobre Nuestras actitudes se forman a través de una combinación de influencias biológicas y ambientales. Desde una perspectiva biológica, nuestras actitudes pueden estar influenciadas por factores genéticos y por la química del cerebro">
-                <meta itemprop="description" content="La empatía infinita.">
-                <meta itemprop="thumbnailUrl" content="https://i.postimg.cc/G3VRrYKj/actitudes.png">
-                <meta itemprop="uploadDate" content="2023-09-28">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q0lfd0x1JZY  ">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0lfd0x1JZY " title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <figcaption>Video educativo sobre el poder de la mente</figcaption>
-            </figure>
-</section>
- 
 <!-- Botón para subir -->
-<button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="fas fa-hand-point-up"></i> IR AL MENU <i class="fas fa-hand-point-up"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="fas fa-hand-point-up"></i> IR AL MENU CAMBIA DE VIDEO <i class="fas fa-hand-point-up"></i></button>
 
 <script>
 // Cuando el usuario desplaza la página 20px desde el top, muestra el botón
@@ -178,12 +196,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 }
 </script>
-
-   	<footer>
-        		<span>© 2023 VIEAJERO HUMANO</span><br>
-			        Especiehumana es una web dedicada a difundir el conocimiento,su origen,evolución,diversidad y cultura. 
-			        Nuestro objetivo es fomentar el interés, la curiosidad y el respeto por la humanidad en todas sus expresiones.
-			        En esta web encontrarás artículos, vídeos, imágenes y recursos educativos sobre temas relacionados con la antropología, la historia, la sociología, la psicología y otras ciencias humanas.
-    	</footer>
+    <footer itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <p>© 2023 VIAJERO HUMANO. Todos los derechos reservados.</p>
+      <p>Especiehumana es una web dedicada a difundir el conocimiento,su origen,evolución,diversidad y cultura. 
+		Nuestro objetivo es fomentar el interés, la curiosidad y el respeto por la humanidad en todas sus expresiones.
+	    En esta web encontrarás artículos, vídeos, imágenes y recursos educativos sobre temas relacionados con la antropología, la historia, la sociología, la     psicología y otras ciencias humanas
+      </p>
+    </footer>
 </body>
 </html>
